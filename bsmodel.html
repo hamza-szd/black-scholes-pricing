@@ -1,0 +1,42 @@
+<style>
+    .metric-container {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        padding: 8px; 
+        width: auto; 
+        margin: 0 auto; 
+    }
+
+    .metric-call { /*For the custom call pricing class*/
+        background-color: #90ee90; 
+        color: black; 
+        margin-right: 10px;
+        border-radius: 10px; 
+    }
+
+    .metric-put { /*For the custom put pricing class*/
+        background-color: #ffcccb;
+        color: black; 
+        border-radius: 10px; 
+        font-weight: bold;
+    }
+
+    .metric-value {
+        font-size: 1.5rem; 
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .metric-label { /*For the label class*/
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+</style>
+
+<div class="metric-container call">
+    <div>
+        <div class="label">Call Value</div>
+        <div class="value">${call_price:.2f}</div>
+    </div>
+</div>

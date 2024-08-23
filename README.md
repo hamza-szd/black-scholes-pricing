@@ -9,6 +9,8 @@ graphically documents via a heatmap the variance of the investor's prospective P
 The user may select, as the underlying asset, any equity from the S&P500 index. The current price of this
 equity is fetched from a live-market API which can be fed into the pricing model dynamically. 
 
+<img src= "Image.png">
+
 ## P&L Heatmap Intuition
 P&L on the option is calculated as the difference between the valuation of the option as calculated
 using the Black-Scholes Model and the current market price. The trader makes a prospective profit 

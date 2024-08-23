@@ -33,3 +33,11 @@ class BlackScholes:
         put_price = X*(exp(-(R*T)))*norm.cdf(-d2) - S*norm.cdf(-d1)
 
         return [call_price, put_price]
+    
+    def compute_PNL(self, put_price, call_price):
+        '''Computes PNL by comparing given option market prices and the Black-Scholes 
+        option pricing'''
+        bs_call, bs_put = self.compute_prices();
+        put_PNL = put_price - bs_put
+        call_PNL = call_price - bs_call
+        return [call_PNL, put_PNL]
